@@ -4,18 +4,6 @@ if (!isset($_SESSION['nama'])) {
     header("Location: index.php");
 }
 
-// if (isset($_POST['search']) ) {
-//     include ("connection.php");
-//     $nama = htmlentities(strip_tags(trim($_GET['cari_nama'])));
-//     if (isset($nama)) {
-//         $query = "SELECT * FROM mahasiswa WHERE nama LIKE '%$nama%'";
-//         $result = mysqli_query ($dblink,$query);
-//         $nama = mysqli_real_escape_string($dblink,$nama);
-//     }
-
-// }else {
-//     $nama = "";
-// }
 
 if (isset($_POST['hapus'])){
     include("connection.php");
